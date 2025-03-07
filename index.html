@@ -161,6 +161,30 @@
             font-style: italic;
             color: #555;
         }
+
+        .popup {
+            display: none;
+            position: absolute;
+            top: 0;
+            left: 100%;
+            width: 300px;
+            height: 300px;
+            background-color: white;
+            border: 2px solid #333;
+            border-radius: 8px;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+            padding: 10px;
+            z-index: 1000;
+        }
+
+        .department:hover .popup {
+            display: block;
+        }
+
+        .popup video {
+            width: 100%;
+            height: auto;
+        }
     </style>
 </head>
 <body>
@@ -188,6 +212,13 @@
                 <img src="IMG_2548.jpg" alt="Natural Sciences">
                 <a href="https://example.com/natural-sciences">Natural Sciences</a>
                 <div class="quote">"Look deep into nature, and then you will understand everything better." – Albert Einstein</div>
+                <div class="popup">
+                    <p>Learn more about Natural Sciences.</p>
+                    <video controls>
+                        <source src="video/natural_sciences.mp4" type="video/mp4">
+                        Your browser does not support the video tag.
+                    </video>
+                </div>
             </div>
         </div>
         <div class="department">
@@ -195,6 +226,13 @@
                 <img src="IMG_2547.jpg" alt="Human Ecology">
                 <a href="https://example.com/human-ecology">Human Ecology and Hospitality Services</a>
                 <div class="quote">"The greatest threat to our planet is the belief that someone else will save it." – Robert Swan</div>
+                <div class="popup">
+                    <p>Learn more about Human Ecology.</p>
+                    <video controls>
+                        <source src="video/human_ecology.mp4" type="video/mp4">
+                        Your browser does not support the video tag.
+                    </video>
+                </div>
             </div>
         </div>
         <div class="department">
@@ -202,6 +240,13 @@
                 <img src="IMG_2545.jpg" alt="Industrial Technology">
                 <a href="https://example.com/industrial-technology">Industrial Technology</a>
                 <div class="quote">"Science and technology revolutionize our lives, but memory, tradition and myth frame our response." – Arthur M. Schlesinger Jr.</div>
+                <div class="popup">
+                    <p>Learn more about Industrial Technology.</p>
+                    <video controls>
+                        <source src="video/industrial_technology.mp4" type="video/mp4">
+                        Your browser does not support the video tag.
+                    </video>
+                </div>
             </div>
         </div>
         <div class="department">
@@ -209,6 +254,13 @@
                 <img src="IMG_2557.jpg" alt="Computer Science">
                 <a href="https://example.com/computer-science">Computer Studies</a>
                 <div class="quote">"The computer was born to solve problems that did not exist before." – Bill Gates</div>
+                <div class="popup">
+                    <p>Learn more about Computer Studies.</p>
+                    <video controls>
+                        <source src="video/computer_science.mp4" type="video/mp4">
+                        Your browser does not support the video tag.
+                    </video>
+                </div>
             </div>
         </div>
         <div class="department">
@@ -216,6 +268,13 @@
                 <img src="IMG_2551.jpg" alt="Mathematics">
                 <a href="https://example.com/mathematics">Mathematics</a>
                 <div class="quote">"Mathematics is the language with which God has written the universe." – Galileo Galilei</div>
+                <div class="popup">
+                    <p>Learn more about Mathematics.</p>
+                    <video controls>
+                        <source src="video/mathematics.mp4" type="video/mp4">
+                        Your browser does not support the video tag.
+                    </video>
+                </div>
             </div>
         </div>
     </div>
