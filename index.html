@@ -58,7 +58,8 @@
 
         .banner-container img {
             width: 100%;
-            height: 25vh; /* Set the height to 25% of the viewport height */
+            height: auto; /* Maintain aspect ratio */
+            max-height: 25vh; /* Set the maximum height to 25% of the viewport height */
             object-fit: cover; /* Ensure the image covers the container */
         }
 
@@ -112,7 +113,7 @@
 
         .department {
             width: 200px;
-            height: 250px;
+            height: 300px; /* Increased height to accommodate quotes */
             margin: 15px;
             border: 2px solid #333;
             border-radius: 8px;
@@ -154,6 +155,12 @@
         .department .front a:hover {
             background-color: #ddd;
         }
+
+        .department .quote {
+            padding: 10px;
+            font-style: italic;
+            color: #555;
+        }
     </style>
 </head>
 <body>
@@ -169,7 +176,7 @@
     </div>
     
     <div class="section">
-        <img src="IMG_566.jpg" alt="Section Image">
+        <img src="IMG_2566.jpg" alt="Section Image">
         <div class="text-container">
             <p>Your text goes here. This is a description or any other content you want to add beside the image.</p>
         </div>
@@ -180,30 +187,35 @@
             <div class="front">
                 <img src="IMG_2548.jpg" alt="Natural Sciences">
                 <a href="https://example.com/natural-sciences">Natural Sciences</a>
+                <div class="quote">"Look deep into nature, and then you will understand everything better." – Albert Einstein</div>
             </div>
         </div>
         <div class="department">
             <div class="front">
                 <img src="IMG_2547.jpg" alt="Human Ecology">
                 <a href="https://example.com/human-ecology">Human Ecology and Hospitality Services</a>
+                <div class="quote">"The greatest threat to our planet is the belief that someone else will save it." – Robert Swan</div>
             </div>
         </div>
         <div class="department">
             <div class="front">
                 <img src="IMG_2545.jpg" alt="Industrial Technology">
                 <a href="https://example.com/industrial-technology">Industrial Technology</a>
+                <div class="quote">"Science and technology revolutionize our lives, but memory, tradition and myth frame our response." – Arthur M. Schlesinger Jr.</div>
             </div>
         </div>
         <div class="department">
             <div class="front">
                 <img src="IMG_2557.jpg" alt="Computer Science">
                 <a href="https://example.com/computer-science">Computer Studies</a>
+                <div class="quote">"The computer was born to solve problems that did not exist before." – Bill Gates</div>
             </div>
         </div>
         <div class="department">
             <div class="front">
                 <img src="IMG_2551.jpg" alt="Mathematics">
                 <a href="https://example.com/mathematics">Mathematics</a>
+                <div class="quote">"Mathematics is the language with which God has written the universe." – Galileo Galilei</div>
             </div>
         </div>
     </div>
