@@ -3,7 +3,7 @@
 <head>
     <title>Mico University College</title>
     <style>
-        .navbar {
+                .navbar {
             display: flex;
             justify-content: center;
             background-color: #333;
@@ -24,7 +24,7 @@
         }
 
         .navbar a:hover {
-            background-color: #cbdd00;
+            background-color: #000000;
             color: black;
         }
 
@@ -70,6 +70,36 @@
             margin: 0;
             padding: 20px;
             background-color: #f4f4f4;
+        }
+
+        .section {
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: center;
+            width: 100%;
+            margin-bottom: 50px;
+        }
+
+        .section img {
+            width: 50%;
+            height: auto;
+        }
+
+        .section .text-container {
+            width: 50%;
+            background-color: black;
+            color: white;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            padding: 20px;
+            box-sizing: border-box;
+        }
+
+        @media (max-width: 768px) {
+            .section img, .section .text-container {
+                width: 100%;
+            }
         }
 
         .department-container {
