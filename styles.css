@@ -69,7 +69,7 @@ p {
 .navbar {
     display: flex;
     justify-content: center;
-    background-color: #333;
+    background-color: #000000;
     overflow: hidden;
     position: sticky;
     top: 0;
@@ -101,7 +101,7 @@ p {
     font-size: 18px;
     border: none;
     outline: none;
-    background-color: #333;
+    background-color: #000000;
     color: white;
     cursor: pointer;
     padding: 15px;
@@ -109,7 +109,7 @@ p {
 }
 
 #back-to-top:hover {
-    background-color: #555;
+    background-color: #ffffff;
 }
 
 .banner-container {
@@ -142,7 +142,7 @@ p {
 
 .section .text-container {
     width: 50%;
-    background-color: black;
+    background-color: #000000;
     color: white;
     display: flex;
     align-items: center;
@@ -169,7 +169,7 @@ p {
     width: 200px;
     height: 300px; /* Increased height to accommodate quotes */
     margin: 15px;
-    border: 2px solid #333;
+    border: 2px solid #000000;
     border-radius: 8px;
     overflow: hidden;
     text-align: center;
@@ -202,7 +202,7 @@ p {
     display: block;
     padding: 10px;
     text-decoration: none;
-    color: #333;
+    color: #000000;
     font-weight: bold;
 }
 
@@ -213,7 +213,7 @@ p {
 .department .quote {
     padding: 10px;
     font-style: italic;
-    color: #555;
+    color: #000000;
 }
 
 .popup {
@@ -224,7 +224,7 @@ p {
     width: 300px;
     height: 300px;
     background-color: white;
-    border: 2px solid #333;
+    border: 2px solid #000000;
     border-radius: 8px;
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
     padding: 10px;
@@ -242,17 +242,22 @@ p {
 
 /* Footer Section */
 footer {
-    background-color: #333;
+    background-color: #000000;
     color: rgb(255, 255, 255);
     padding: 20px 0;
     text-align: center;
 }
 
-
 footer .box h1.quick,
 footer .box h1.social,
 footer .box h1.contacts {
     color: #ffffff;
+}
+
+footer .box h1 {
+    color: #ffffff; /* Ensure the text color is white */
+    font-size: 18px;
+    margin-bottom: 10px;
 }
 
 footer .container {
@@ -264,11 +269,6 @@ footer .container {
 footer .box {
     width: 200px;
     margin: 10px;
-}
-
-footer .box h1 {
-    font-size: 18px;
-    margin-bottom: 10px;
 }
 
 footer .box .about,
@@ -289,7 +289,7 @@ footer .box ul li {
 footer .box ul li button {
     background-color: #ffff00;
     border: none;
-    color: #333;
+    color: #000000;
     padding: 10px 20px;
     text-decoration: none;
     cursor: pointer;
@@ -305,7 +305,7 @@ footer .box ul li button:hover {
 
 footer .box ul li .contact-info {
     background-color: rgb(0, 0, 0);
-    color: #333;
+    color: #000000;
     padding: 10px;
     border-radius: 4px;
     margin-top: 10px;
@@ -316,7 +316,7 @@ footer .box ul li .contact-info div {
 }
 
 footer .box ul li .contact-info a {
-    color: #333;
+    color: #000000;
     text-decoration: none;
 }
 
@@ -332,6 +332,10 @@ footer .box ul li a {
 
 footer .box ul li a:hover {
     color: #000000;
+}
+
+.custom-font {
+    font-family: 'Geoform', Arial, sans-serif; 
 }
 
 .custom-font {
