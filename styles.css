@@ -245,9 +245,16 @@ p {
 /* Footer Section */
 footer {
     background-color: #333;
-    color: white;
+    color: rgb(255, 255, 255);
     padding: 20px 0;
     text-align: center;
+}
+
+
+footer .box h1.quick,
+footer .box h1.social,
+footer .box h1.contacts {
+    color: #ffffff;
 }
 
 footer .container {
