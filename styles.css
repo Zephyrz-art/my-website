@@ -299,7 +299,7 @@ footer .box ul li button:hover {
 }
 
 footer .box ul li .contact-info {
-    background-color: white;
+    background-color: rgb(0, 0, 0);
     color: #333;
     padding: 10px;
     border-radius: 4px;
@@ -320,11 +320,11 @@ footer .box ul li .contact-info a:hover {
 }
 
 footer .box ul li a {
-    color: white;
+    color: rgb(0, 81, 255);
     text-decoration: underline;
     font-size: 14px;
 }
 
 footer .box ul li a:hover {
-    color: #ddd;
+    color: #000000;
 }
