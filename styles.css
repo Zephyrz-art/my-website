@@ -1,3 +1,5 @@
+/* Styles for the webpage */
+
 @font-face {
     font-family: 'Geoform';
     src: url('Geoform-BoldItalic.otf') format('truetype');
@@ -50,7 +52,7 @@ p {
     color: #fff;
     text-decoration: none;
     padding: 5px 20px;
-    font-family: 'Geoform-BoldItalic', Arial, sans-serif;
+    font-family: 'Geoform', Arial, sans-serif; /* Apply Geoform font */
 }
 
 .nav a:hover {
@@ -74,8 +76,8 @@ p {
     position: sticky;
     top: 0;
     z-index: 1000;
-    width: 100%;
-    flex-wrap: wrap;
+    width: 100%; /* Extend the navbar to full width */
+    flex-wrap: wrap; /* Allow items to wrap to the next line */
 }
 
 .navbar a {
@@ -84,7 +86,7 @@ p {
     text-align: center;
     padding: 14px 16px;
     text-decoration: none;
-    font-family: 'Geoform-BoldItalic', Arial, sans-serif;
+    font-family: 'Geoform', Arial, sans-serif; /* Apply Geoform font */
 }
 
 .navbar a:hover {
@@ -240,47 +242,6 @@ p {
     height: auto;
 }
 
-/* Contact Us Section */
-.contact-us {
-    text-align: center;
-    padding: 50px 20px;
-    background-color: #f4f4f4;
-    margin-top: 50px;
-}
-
-.contact-us h2 {
-    margin-bottom: 20px;
-}
-
-.contact-us button {
-    background-color: #333;
-    color: white;
-    padding: 10px 20px;
-    border: none;
-    border-radius: 4px;
-    cursor: pointer;
-    font-size: 16px;
-}
-
-.contact-us button:hover {
-    background-color: #555;
-}
-
-.social-media {
-    margin-top: 20px;
-}
-
-.social-media a {
-    margin: 0 10px;
-    text-decoration: none;
-    color: #333;
-    font-size: 20px;
-}
-
-.social-media a:hover {
-    color: #555;
-}
-
 /* Footer Section */
 footer {
     background-color: #333;
@@ -330,11 +291,32 @@ footer .box ul li button {
     font-size: 14px;
     border-radius: 4px;
     transition: background-color 0.3s ease;
-    font-family: 'Geoform', Arial, sans-serif;
+    font-family: 'Geoform', Arial, sans-serif; /* Apply Geoform font */
 }
 
 footer .box ul li button:hover {
     background-color: #ffd700;
+}
+
+footer .box ul li .contact-info {
+    background-color: white;
+    color: #333;
+    padding: 10px;
+    border-radius: 4px;
+    margin-top: 10px;
+}
+
+footer .box ul li .contact-info div {
+    margin-bottom: 5px;
+}
+
+footer .box ul li .contact-info a {
+    color: #333;
+    text-decoration: none;
+}
+
+footer .box ul li .contact-info a:hover {
+    text-decoration: underline;
 }
 
 footer .box ul li a {
@@ -345,9 +327,4 @@ footer .box ul li a {
 
 footer .box ul li a:hover {
     color: #ddd;
-}
-
-footer .copyright {
-    margin-top: 20px;
-    font-size: 12px;
 }
