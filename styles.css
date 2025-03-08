@@ -234,3 +234,111 @@ p {
     width: 100%;
     height: auto;
 }
+
+/* Contact Us Section */
+.contact-us {
+    text-align: center;
+    padding: 50px 20px;
+    background-color: #f4f4f4;
+    margin-top: 50px;
+}
+
+.contact-us h2 {
+    margin-bottom: 20px;
+}
+
+.contact-us button {
+    background-color: #333;
+    color: white;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    font-size: 16px;
+}
+
+.contact-us button:hover {
+    background-color: #555;
+}
+
+.social-media {
+    margin-top: 20px;
+}
+
+.social-media a {
+    margin: 0 10px;
+    text-decoration: none;
+    color: #333;
+    font-size: 20px;
+}
+
+.social-media a:hover {
+    color: #555;
+}
+
+/* Footer Section */
+footer {
+    background-color: #333;
+    color: white;
+    padding: 20px 0;
+    text-align: center;
+}
+
+footer .container {
+    display: flex;
+    justify-content: space-around;
+    flex-wrap: wrap;
+}
+
+footer .box {
+    width: 200px;
+    margin: 10px;
+}
+
+footer .box h1 {
+    font-size: 18px;
+    margin-bottom: 10px;
+}
+
+footer .box .about,
+footer .box ul {
+    font-size: 14px;
+    line-height: 1.6;
+}
+
+footer .box ul {
+    list-style: none;
+    padding: 0;
+}
+
+footer .box ul li {
+    margin-bottom: 10px;
+}
+
+footer .box ul li button {
+    background: none;
+    border: none;
+    color: white;
+    text-decoration: underline;
+    cursor: pointer;
+    font-size: 14px;
+}
+
+footer .box ul li button:hover {
+    color: #ddd;
+}
+
+footer .box ul li a {
+    color: white;
+    text-decoration: underline;
+    font-size: 14px;
+}
+
+footer .box ul li a:hover {
+    color: #ddd;
+}
+
+footer .copyright {
+    margin-top: 20px;
+    font-size: 12px;
+}
