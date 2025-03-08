@@ -1,5 +1,10 @@
 /* Styles for the webpage */
 
+@font-face {
+    font-family: 'Geoform';
+    src: url('Geoform-BoldItalic.otf') format('truetype');
+}
+
 body {
     font-family: Arial, sans-serif;
     margin: 0;
@@ -47,6 +52,7 @@ p {
     color: #fff;
     text-decoration: none;
     padding: 5px 20px;
+    font-family: 'Geoform-BoldItalic', Arial, sans-serif;
 }
 
 .nav a:hover {
@@ -70,8 +76,8 @@ p {
     position: sticky;
     top: 0;
     z-index: 1000;
-    width: 100%; /* Extend the navbar to full width */
-    flex-wrap: wrap; /* Allow items to wrap to the next line */
+    width: 100%;
+    flex-wrap: wrap;
 }
 
 .navbar a {
@@ -80,6 +86,7 @@ p {
     text-align: center;
     padding: 14px 16px;
     text-decoration: none;
+    font-family: 'Geoform-BoldItalic', Arial, sans-serif;
 }
 
 .navbar a:hover {
@@ -316,16 +323,20 @@ footer .box ul li {
 }
 
 footer .box ul li button {
-    background: none;
+    background-color: #ffff00;
     border: none;
-    color: white;
-    text-decoration: underline;
+    color: #333;
+    padding: 10px 20px;
+    text-decoration: none;
     cursor: pointer;
     font-size: 14px;
+    border-radius: 4px;
+    transition: background-color 0.3s ease;
+    font-family: 'Geoform', Arial, sans-serif;
 }
 
 footer .box ul li button:hover {
-    color: #ddd;
+    background-color: #ffd700;
 }
 
 footer .box ul li a {
