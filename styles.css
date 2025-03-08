@@ -50,7 +50,7 @@ p {
     color: #fff;
     text-decoration: none;
     padding: 5px 20px;
-    font-family: 'Geoform', Arial, sans-serif;
+    font-family: 'Geoform', Arial, sans-serif; /* Apply Geoform font */
 }
 
 .nav a:hover {
@@ -74,8 +74,8 @@ p {
     position: sticky;
     top: 0;
     z-index: 1000;
-    width: 100%; 
-    flex-wrap: wrap;
+    width: 100%; /* Extend the navbar to full width */
+    flex-wrap: wrap; /* Allow items to wrap to the next line */
 }
 
 .navbar a {
@@ -84,7 +84,7 @@ p {
     text-align: center;
     padding: 14px 16px;
     text-decoration: none;
-    font-family: 'Geoform', Arial, sans-serif; 
+    font-family: 'Geoform', Arial, sans-serif; /* Apply Geoform font */
 }
 
 .navbar a:hover {
@@ -122,9 +122,9 @@ p {
 
 .banner-container img {
     width: 100%;
-    height: auto; 
-    max-height: 25vh;
-    object-fit: cover;
+    height: auto; /* Maintain aspect ratio */
+    max-height: 25vh; /* Set the maximum height to 25% of the viewport height */
+    object-fit: cover; /* Ensure the image covers the container */
 }
 
 .section {
@@ -158,7 +158,7 @@ p {
 }
 
 .department-container {
-    margin-top: 50px;
+    margin-top: 50px; /* Add margin to create space between navbar and department rectangles */
     display: flex;
     flex-wrap: wrap;
     justify-content: center;
@@ -167,7 +167,7 @@ p {
 
 .department {
     width: 200px;
-    height: 300px;
+    height: 300px; /* Increased height to accommodate quotes */
     margin: 15px;
     border: 2px solid #333;
     border-radius: 8px;
@@ -186,7 +186,7 @@ p {
 .department .front {
     display: flex;
     flex-direction: column;
-    justify-content: flex-start;
+    justify-content: flex-start; /* Align items to the top */
     align-items: center;
     width: 100%;
     height: 100%;
@@ -194,7 +194,7 @@ p {
 
 .department .front img {
     width: 100%;
-    height: 25%;
+    height: 25%; /* Set the height to 25% of the rectangle */
     object-fit: cover;
 }
 
@@ -296,11 +296,11 @@ footer .box ul li button {
     font-size: 14px;
     border-radius: 4px;
     transition: background-color 0.3s ease;
-    font-family: 'Geoform', Arial, sans-serif;
+    font-family: 'Geoform', Arial, sans-serif; /* Apply Geoform font */
 }
 
 footer .box ul li button:hover {
-    background-color: #ffd700;
+    background-color: #ffffff;
 }
 
 footer .box ul li .contact-info {
