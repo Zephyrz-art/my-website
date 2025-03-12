@@ -1,21 +1,101 @@
 <!DOCTYPE html>
-<html>
+<html lang="en-US">
 <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Mico University College</title>
     <link rel="stylesheet" href="styles.css">
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0; 
+            padding: 0; 
+        }
+        .navbar, .navbar-scroll {
+            position: fixed;
+            width: 100%;
+            top: 0;
+            left: 0;
+            background-color: #333;
+            overflow: hidden;
+            display: none;
+            text-align: center; 
+            z-index: 1000; 
+            opacity: 0; 
+            transition: opacity 0.5s ease; 
+        }
+        .navbar a, .navbar-scroll a {
+            display: inline-block; 
+            color: #f2f2f2;
+            text-align: center;
+            padding: 14px 16px;
+            text-decoration: none;
+            font-family: 'Geoform', sans-serif, Arial;
+        }
+        .navbar a:hover, .navbar-scroll a:hover {
+            background-color: #ddd;
+            color: black;
+        }
+        .navbar-scroll {
+            background-color: #444;
+        }
+        #back-to-top {
+            display: none; 
+            position: fixed; 
+            bottom: 20px; 
+            right: 30px; 
+            z-index: 99; 
+            border: none; 
+            outline: none;
+            background-color: #111; 
+            color: white;
+            cursor: pointer; 
+            padding: 15px;
+            border-radius: 10px; 
+        }
+        #back-to-top:hover {
+            background-color: #444;
+        }
+        .banner-container {
+            margin-top: 50px; 
+        }
+        .bar-below-banner {
+            width: 100%;
+            height: 50px; /* Adjust the height as needed */
+            background-color: #333; /* Adjust the background color as needed */
+            color: rgb(0, 0, 0);
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            font-size: 1.2em;
+        }
+    </style>
 </head>
 <body>
+    <div class="navbar" id="navbar">
+        <a href="about us.html">About Us</a>
+        <a href="#natural-sciences">Natural Sciences</a>
+        <a href="#human-ecology">Human Ecology</a>
+        <a href="computer.html">Computer Studies</a>
+        <a href="#mathematics">Mathematics</a>
+        <a href="#Industrial Technology">Industrial Technology</a>
+    </div>
+    <div class="navbar-scroll" id="navbar-scroll">
+        <a href="#contact-us">Contact Us</a>
+        <a href="https://example.com/new-path2">New Path 2</a>
+        <a href="https://example.com/new-path3">New Path 3</a>
+        <a href="https://example.com/new-path4">New Path 4</a>
+        <a href="https://example.com/new-path5">New Path 5</a>
+    </div>
+
     <div class="banner-container">
         <img src="DSC8377-Pano-1024x449.jpg" alt="banner">
     </div>
-    <div class="navbar">
-        <a href="#natural-sciences">Natural Sciences</a>
-        <a href="#human-ecology">Human Ecology and Hospitality Services</a>
-        <a href="#industry">Industrial Technology</a>
-        <a href="#computer-science">Computer Studies</a>
-        <a href="#mathematics">Mathematics</a>
-    </div>
     
+    <div class="bar-below-banner">
+        -
+    </div>
+
     <div class="section">
         <img src="IMG_2566.jpg" alt="Section Image">
         <div class="text-container">
@@ -69,7 +149,7 @@
         <div class="department">
             <div class="front">
                 <img src="IMG_2557.jpg" alt="Computer Science">
-                <a href="https://example.com/computer-science">Computer Studies</a>
+                <a href="computer.html">Computer Studies</a>
                 <div class="quote">"The computer was born to solve problems that did not exist before." – Bill Gates</div>
                 <div class="popup">
                     <p>Learn more about Computer Studies.</p>
@@ -97,7 +177,7 @@
     </div>
 
     <!-- Footer Section -->
-    <footer>
+    <footer id="contact-us"> 
         <div class="container">
             <div class="box">
                 <h1>The Mico University College</h1>
@@ -142,21 +222,38 @@
     <button onclick="topFunction()" id="back-to-top" title="Go to top">Back To Top</button>
 
     <script>
-        // Get the button
+        // Get the buttons and navigation bars
         var mybutton = document.getElementById("back-to-top");
+        var navbar = document.getElementById("navbar");
+        var navbarScroll = document.getElementById("navbar-scroll");
 
-        // When the user scrolls down 20px from the top of the document, show the button
+
+        navbar.style.display = "block";
+        navbar.style.opacity = "1"; 
+
         window.onscroll = function() {scrollFunction()};
 
         function scrollFunction() {
             if (document.body.scrollTop > 20 || document.documentElement.scrollTop > 20) {
                 mybutton.style.display = "block";
+                navbar.style.opacity = "0"; 
+                setTimeout(function() {
+                    navbar.style.display = "none";
+                    navbarScroll.style.display = "block";
+                    navbarScroll.style.opacity = "1"; 
+                }, 500); 
             } else {
                 mybutton.style.display = "none";
+                navbarScroll.style.opacity = "0"; 
+                setTimeout(function() {
+                    navbarScroll.style.display = "none";
+                    navbar.style.display = "block";
+                    navbar.style.opacity = "1"; 
+                }, 500); 
             }
         }
 
-        // When the user clicks on the button, scroll to the top of the document
+        
         function topFunction() {
             document.body.scrollTop = 0;
             document.documentElement.scrollTop = 0;
