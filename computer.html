@@ -3,18 +3,19 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Computer Science Webpage</title>
+    <title>Computer Science - Mico University College</title>
     <style>
         body {
-            font-family: Arial, sans-serif;
+            font-family: 'Roboto', sans-serif;
             margin: 0;
             padding: 0;
             background-color: #f4f4f4;
+            color: #333;
         }
         .header {
             text-align: center;
             padding: 20px;
-            background-color: #333;
+            background-color: #ffdd00; /* Mico University College color */
             color: white;
         }
         .header img, .header video {
@@ -26,30 +27,69 @@
         .description {
             padding: 20px;
             text-align: center;
-            background-color: #555;
-            color: white;
+            background-color: #e6e6e6;
+            color: #333;
         }
         .rectangles {
             display: flex;
             justify-content: space-around;
             padding: 20px;
+            flex-wrap: wrap;
         }
         .rectangle {
-            width: 25%;
+            width: 30%;
             height: 150px;
-            background-color: #777;
+            background-color: #000000; /* Mico University College color */
             margin: 10px;
             display: flex;
             align-items: center;
             justify-content: center;
             color: white;
             font-size: 1.2em;
+            border-radius: 8px;
+            transition: transform 0.3s, background-color 0.3s;
+        }
+        .rectangle:hover {
+            transform: scale(1.05);
+            background-color: #000000; /* Slightly lighter shade */
+        }
+        .footer {
+            text-align: center;
+            padding: 20px;
+            background-color: #ffdd00; /* Mico University College color */
+            color: white;
+        }
+        @media (max-width: 768px) {
+            .rectangle {
+                width: 100%;
+            }
+        }
+        .navbar {
+            display: flex;
+            justify-content: center;
+            background-color: #000000; /* Mico University College color */
+            padding: 10px;
+        }
+        .navbar a {
+            color: white;
+            text-decoration: none;
+            padding: 10px 20px;
+            font-size: 1em;
+        }
+        .navbar a:hover {
+            background-color: #ffdd00; /* Slightly lighter shade */
+            border-radius: 5px;
         }
     </style>
 </head>
 <body>
+    <div class="navbar">
+        <a href="index.html">Home</a>
+        <a href="about us.html">About Us</a>
+        <a href="contact.html">Contact</a>
+    </div>
     <div class="header">
-        <img src="C:\Users\campb\OneDrive\Pictures\Webpage\Week 5\WhatsApp Image 2025-03-11 at 20.46.26_0c0a5603.jpg" alt="Computer Science Image">
+        <img src="IMG_2566.jpg" alt="Computer Science Department">
         <!-- Or use a video -->
         <!-- <video controls>
             <source src="path/to/your/video.mp4" type="video/mp4">
@@ -57,12 +97,19 @@
         </video> -->
     </div>
     <div class="description">
-        <p>This page is dedicated to Computer Science topics and resources.</p>
+        <h1>Welcome to the Computer Science Department</h1>
+        <p>Explore the world of Computer Science with our resources and topics.</p>
     </div>
     <div class="rectangles">
-        <div class="rectangle">Rectangle 1</div>
-        <div class="rectangle">Rectangle 2</div>
-        <div class="rectangle">Rectangle 3</div>
+        <div class="rectangle">Programming</div>
+        <div class="rectangle">Algorithms</div>
+        <div class="rectangle">Data Structures</div>
+        <div class="rectangle">Artificial Intelligence</div>
+        <div class="rectangle">Cybersecurity</div>
+        <div class="rectangle">Web Development</div>
+    </div>
+    <div class="footer">
+        <p>&copy; 2025 Computer Science Department. All rights reserved.</p>
     </div>
 </body>
 </html>
